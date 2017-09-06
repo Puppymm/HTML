@@ -1,0 +1,238 @@
+/* CSS Document */
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #ECECEC;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+h1,h2,h3,h4,h5,h6,ul,li,p{
+	margin: 0px;
+	padding: 0px;
+	}
+a {
+	text-decoration: none;
+	outline: none;
+	color: #CCC;
+}
+
+ul li {
+	list-style: none;
+}
+/*头部样式*/
+.header {
+	background: #000;
+	height: 100px;
+	width: 100%;
+	min-width: 1220px;
+}
+.header_content {
+	width: 1220px;
+	height: 100%;
+	margin: 0 auto;
+}
+.log_img {
+	margin-top: 25px;
+	float: left;
+	margin-right: 260px;
+}
+.header_ul {
+	float: left;
+}
+.header_ul li {
+	float: left;
+	margin-right: 20px;
+	margin-top: 40px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+#header_ul_a {
+	color: #FFF;
+}
+.header_ul li a:hover {
+	color: #FFF;
+}
+.login {
+	float: right;
+	margin-top: 40px;
+	font-size: 14px;
+	position: relative;
+	margin-right: 40px;
+}
+.login a {
+	color: #fff;
+	opacity: 0.8;			/*透明度:opacity*/
+	border: 1px solid #ccc;
+	padding: 4px 30px;
+	border-radius: 3px;
+	background: rgba(255,255,255,0.1);
+}
+.login:before { 				/*在...之前: 	:before*/
+	content: "";
+	width: 1px;
+	height: 20px;
+	background: #ededed;
+	display: block;
+	position: absolute;
+	left: -35px;
+}
+
+/*底部样式*/	
+.footer {
+	background: #fafafa;
+	border-top: 1px solid #e6e6e6;
+	width: 100%;
+	min-width: 1220px;
+}
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1220px;
+}
+.siteinfo {
+	height: 100px;
+	padding: 100px 0 32px;
+	border-bottom: 1px solid #e6e6e6;
+	position: relative;
+}
+.nav-footer>li {
+	float: left;
+	width: 140px;
+	font-size: 12px;
+}
+.nav-footer li h3 {
+	font-size: 12px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.nav-footer li ul li {
+	line-height: 20px;
+}
+.nav-footer li ul li a:hover {
+	color: #5079d9;
+}
+.contact {
+	float: right;
+	text-align: right;
+}
+.contact a:hover {
+	background: #CCC;
+}
+.contact h2 {
+	font-size: 30px;
+	color: #646464;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+.contact p {
+	font-size: 12px;
+	color: #CCCCCC;
+	line-height: 30px;
+	margin: 0px;
+	padding: 0px;
+}
+.contact a {
+	font-size: 14px;
+	color: #5079d9;
+	border: 1px solid #E6E6E6;
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 5px;
+}
+.contact a span {
+	width: 15px;
+	height: 15px;
+	background: #5079d9;
+	display: inline-block;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	line-height: 15px;
+	font-size: 12px;
+	margin-right: 10px;
+}
+.footer-bottom {
+	padding: 40px 0px;
+	font-size: 12px;
+}
+.footer-bottom ul li {
+	float: left;
+	margin: 0 8px;
+}
+.footer-bottom ul li a {
+	color: #5079D9;
+	border-left: 1px solid #CCCCCC;
+	padding-left: 10px;
+}
+.footer-bottom p {
+	clear: both;
+	line-height: 28px;
+}
+.footer-bottom p a {
+	color: #E6E6E6;
+	margin: 0 10px;
+}
+.language {
+	float: right;
+	margin-top: -90px;
+	position: relative;
+}
+.zh {
+	width: 110px;
+	height: 45px;
+	text-align: center;
+	line-height: 52px;
+	background:url(../images/language.png) no-repeat 12px 19px;
+	cursor: pointer;
+}
+.zh span {
+	width: 0px;
+	height: 0px;
+	display: inline-block;
+	border-width: 4px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+	margin-left: 13px;
+	position: relative;
+	top: 3px;
+}
+.language:hover .zh {
+	color: #5079D9;
+	background: #FAFAFA url(../images/language.png) no-repeat 12px 19px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0px 0px 1px 1px #E6E6E6;
+}
+.language:hover .zh span {
+	border-color: transparent transparent #5079D9 transparent;
+	top: -3px;
+}
+.en {
+	width: 110px;
+	height: 45px;
+	line-height: 45px;
+	background: url(../images/language.png) no-repeat 12px -15px;
+	position: absolute;
+	top: -45px;
+	box-shadow: 0px 0px 1px 1px #E6E6E6;
+	text-align: center;
+	display: none
+}
+.language:hover .en {
+	color: #5079D9;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background: #fff url(../images/language.png) no-repeat 12px -15px;
+	display: block;
+}
+
+
+
+
+
+
+					
