@@ -1,0 +1,58 @@
+.poster-main{
+	width: 1000px;
+	height: 500px;
+	position: relative;
+	margin: 30px auto;
+}
+.poster-main a,.poster-main img{
+	display:block;
+}
+.poster-main .poster-list{
+	width: 1000px;
+	height: 500px;
+}
+.poster-main .poster-list .poster-item{ 
+	position:absolute;
+	left:0;
+	top:0;
+}
+.poster-item{
+	border-radius: 10px;
+	overflow: hidden;
+}
+.poster-main .poster-btn{ 
+	position:absolute;
+	top:0;
+	z-index:10; 
+	cursor:pointer;  
+}
+.poster-main .poster-prev-btn{
+	left:0; 
+	background: url(../img/left.png) no-repeat center center;
+}
+.poster-main .poster-next-btn{
+	right:0; 
+	background: url(../img/right.png) no-repeat center center;
+}
+.poster-item>a{
+	position: relative;
+}
+.pm_txet{
+	position: absolute;
+	height: 100px;
+	width: 100%;
+	bottom: 0px;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+	color: #FFFFFF;
+	box-sizing: border-box;
+	padding-top: 20px;
+}
+.pm_txet>h3{
+	font-size: 24px;
+	font-weight: normal;
+}
+.pm_txet>p{
+	font-size: 18px;
+	line-height: 1.8em;
+}
