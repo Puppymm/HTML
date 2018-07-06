@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+			@keyframes zz{
+				0%{
+					transform: perspective(800px) rotateX(0deg) rotateY(72deg);
+				}
+				10%{
+					transform: perspective(800px) rotateX(0deg) rotateY(144deg);
+				}
+				20%{
+					transform: perspective(800px) rotateX(0deg) rotateY(216deg);
+				}
+				30%{
+					transform: perspective(800px) rotateX(0deg) rotateY(288deg);
+				}
+				40%{
+					transform: perspective(800px) rotateX(0deg) rotateY(360deg);
+				}
+				50%{
+					transform: perspective(800px) rotateX(72deg) rotateY(360deg);
+				}
+				60%{
+					transform: perspective(800px) rotateX(144deg) rotateY(360deg);
+				}
+				70%{
+					transform: perspective(800px) rotateX(216deg) rotateY(360deg);
+				}
+				80%{
+					transform: perspective(800px) rotateX(288deg) rotateY(360deg);
+				}
+				90%{
+					transform: perspective(800px) rotateX(360deg) rotateY(360deg);
+				}
+				100%{
+					transform: perspective(800px) rotateX(360deg) rotateY(360deg);
+				}
+				
+				
+			}
+			.box{
+				width: 200px;
+				height: 200px;
+				/*border:1px  solid black;*/
+				box-sizing: border-box;
+				margin: 200px auto;
+				position: relative;
+				animation: zz 5s infinite;
+				transform-style: preserve-3d;/*3d*/
+			
+			}
+			body{
+				background-color: black;
+			}
+			.box div{
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				border:1px  solid skyblue;
+				box-sizing: border-box;
+				opacity: 0.9;
+				box-shadow: 2px 2px 3px plum;
+			}
+			.box div img{
+				width: 200px;
+				height: 200px;
+			}
+			.a1{
+				transform: translateZ(100px);
+				
+			}
+			.a2{
+				transform: translateZ(-100px);
+			}
+			.a3{
+				transform: translateX(50%) rotateY(90deg);
+			}
+			.a4{
+				transform: translateX(-50%) rotateY(90deg);
+			}
+			.a5{
+				transform: translateY(-50%) rotateX(90deg);
+			}
+			.a6{
+				transform: translateY(50%) rotateX(90deg);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="a1">
+				<img src="img/1.png"/>
+				sone
+			</div>
+			<div class="a2">
+				<img src="img/2.png"/>
+			</div>
+			<div class="a3">
+				<img src="img/3.png"/>
+			</div>
+			<div class="a4">
+				<img src="img/4.png"/>
+			</div>
+			<div class="a5">
+				<img src="img/5.png"/>
+			</div>
+			<div class="a6">
+				<img src="img/6.png"/>
+			</div>
+		</div>
+	</body>
+</html>
