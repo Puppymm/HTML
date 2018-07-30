@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html,body{
+				width: 100%;
+				height: 100%;
+			}
+			body{
+				
+				background-image: url("http://i1.hdslb.com/bfs/archive/430b5cecc09e8d4b09f68ccba6c9e4d76571ef62.jpg");
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}
+			#box{
+				text-align: center;
+				padding: 20px 0px;
+				min-width: 1000px;
+				background-color: rgba(100,100,100,0.5);
+			}
+			#box>img{
+				width: 150px;
+				height: 150px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<img src="http://i1.hdslb.com/bfs/archive/430b5cecc09e8d4b09f68ccba6c9e4d76571ef62.jpg" />
+			<img src="http://i8.download.fd.pchome.net/t_1024x768/g1/M00/12/1D/oYYBAFb4-4-IVSXvAA4bHNQ6mjoAAC4TAPNRAUADhs0254.jpg" />
+			<img src="http://s13.sinaimg.cn/mw690/001lVj3Tzy74eUjsWhS0c&690" />
+		</div>
+	</body>
+	<script type="text/javascript">
+		function $(id){
+			return document.getElementById(id)
+		}
+		var imgs=$("box").children;
+		for (var i=0;i<imgs.length;i++) {
+			imgs[i].onclick=function(){
+				document.body.style.backgroundImage="url("+this.src+")";
+			}
+		}
+	</script>
+</html>
