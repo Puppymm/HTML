@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			table{
+				border-collapse:collapse ;
+				margin: 30px auto;
+				
+			}
+			td,th{
+				text-align: center;
+				width: 120px;
+				height: 40px;
+				border: 1px solid black;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="wrrap">
+			<table>
+				<thead>
+					<tr>
+						<th><input type="checkbox" id="j_cbAll"/></th>
+						<th>菜名</th>
+						<th>饭店</th>
+					</tr>
+				</thead>
+				
+				<tbody id="j_tb">
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>红烧狮子</td>
+						<td>毛毛饭店</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>一碗香</td>
+						<td>毛毛饭店</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>油炸榴莲</td>
+						<td>毛毛饭店</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function $(id){
+			return document.getElementById(id);
+		}
+		
+		var cks=$("j_tb").getElementsByTagName("input");
+		
+		$("j_cbAll").onclick=function(){
+			for (var i=0;i<cks.length; i++) {
+				cks[i].checked=this.checked;
+			}
+		}
+		
+		for (var i=0;i<cks.length; i++) {
+				cks[i].onclick=function(){
+					var flag=true;
+					for (var j=0;j<cks.length;j++) {
+						if(!cks[j].checked){
+							flag=false;
+							break;
+						}
+					}
+					$("j_cbAll").checked=flag;
+				}
+			}
+	</script>
+</html>
